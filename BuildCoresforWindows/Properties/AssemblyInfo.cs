@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("BuildCoresforWindows")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("BuildCores")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("OXOP")]
 [assembly: AssemblyProduct("BuildCoresforWindows")]
-[assembly: AssemblyCopyright("Copyright ©  2026")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCopyright("Copyright © OXOP 2026")]
+[assembly: AssemblyTrademark("Trademark ™ OXOP 2026")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
