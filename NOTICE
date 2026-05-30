@@ -1,0 +1,10 @@
+BuildCoresforWindows
+Copyright 2026 OXOP
+
+This product includes software developed by OXOP.
+
+This product bundles the following third-party software components:
+
+* CefSharp (Chromium Embedded Framework wrapper)
+  Copyright (c) 2010 CefSharp Authors. All rights reserved.
+  Licensed under the BSD-3-Clause License.
