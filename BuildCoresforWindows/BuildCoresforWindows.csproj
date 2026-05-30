@@ -125,4 +125,16 @@
     <Error Condition="!Exists('..\packages\CefSharp.Common.148.0.90\build\CefSharp.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.Common.148.0.90\build\CefSharp.Common.targets'))" />
   </Target>
   <Import Project="..\packages\CefSharp.Common.148.0.90\build\CefSharp.Common.targets" Condition="Exists('..\packages\CefSharp.Common.148.0.90\build\CefSharp.Common.targets')" />
+  
+  <Target Name="ZipReleaseBuild" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'">
+    <GetAssemblyIdentity AssemblyFiles="$(OutputPath)$(AssemblyName).exe">
+      <Output TaskParameter="Assemblies" ItemName="AssemblyVersionInfo" />
+    </GetAssemblyIdentity>
+    <PropertyGroup>
+      <BuildVersion>%(AssemblyVersionInfo.Version)</BuildVersion>
+      <ZipFileName>$(TargetDir)..\BuildCoresForWindows-$(BuildVersion).zip</ZipFileName>
+    </PropertyGroup>
+    <Delete Files="$(ZipFileName)" Condition="Exists('$(ZipFileName)')" />
+    <ZipDirectory SourceDirectory="$(TargetDir)" DestinationFile="$(ZipFileName)" />
+  </Target>
 </Project>
