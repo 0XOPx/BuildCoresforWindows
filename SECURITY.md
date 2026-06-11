@@ -6,6 +6,7 @@ The table below details which versions of BuildCoresforWindows currently receive
 
 | Version | Supported          |
 | ------- | ------------------ |
+| < 1.0   | :question:         |
 | 1.0.x   | :white_check_mark: |
 | < 1.0   | :x:                |
 
